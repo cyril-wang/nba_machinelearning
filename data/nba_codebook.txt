@@ -1,0 +1,37 @@
+Name / Data Type / Description
+---------------------------------------------------------------
+Player / nominal  / the player's name
+Pos / nominal / the position that the player plays; PG = Point Guard, SG = Shooting Guard, SF = Small Forward, PF = Power Forward, C = Center
+Age / integer / the player's age in years 
+---------------------------------------------------------------
+FG / continuous / average number of field goals made per game
+FGA / continuous / average number of field goals attempted per game
+FG% / continuous / field goal percentage, or the percentage of field goals that the player made
+---------------------------------------------------------------
+3P / continuous / average number of 3-pointers made per game
+3PA / continuous / average number of 3-pointers attempted per game
+3P% / continuous / 3-point percentage, or the percentage of 3-pointers that the player made
+---------------------------------------------------------------
+2P / continuous / average number of 2-pointers made per game
+2PA / continuous / average number of 2-pointers attempted per game
+2P% / continuous / 2-point percentage, or the percentage of 2-pointers that the player made
+---------------------------------------------------------------
+FT / continuous / average number of free throws made per game
+FTA / continuous / average number of free throws attempted per game
+FT% / continuous / free throw percentage, or the percentage of free throw that the player made
+---------------------------------------------------------------
+ORB / continuous / offensive rebounds per game (i.e. rebounds gotten when their team is on offense)
+DRB / continuous / defensive rebounds per game (i.e. rebounds gotten when their team is on defense)
+TRB / continuous / total rebounds per game 
+---------------------------------------------------------------
+AST / continuous / assists per game
+STL / continuous / steals per game
+BLK / continuous / blocks per game
+TOV / continuous / turnovers per game
+PF / continuous / personal fouls committed per game
+PTS / continuous / points scored per game
+---------------------------------------------------------------
+3PAr / continuous / percentage of field goals attempts taken from 3-point range 
+FTr / continuous / number of free throw attempts per field goal attempt
+USG% / continuous / usage percentage of a player, or the estimated percentage of team plays used by the player
+WS_48 / continuous / win shares per 48 minutes
