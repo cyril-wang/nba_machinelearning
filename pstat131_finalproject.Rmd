@@ -2,13 +2,13 @@
 title: "Final Project"
 author: "Cyril Wang"
 output:
+  pdf_document:
+    
+    toc: yes
   html_document:
     toc: yes
     toc_float: yes
     code_folding: hide
-  pdf_document:
-    
-    toc: yes
 always_allow_html: true
 ---
 
@@ -353,7 +353,7 @@ ridge_res <- tune_grid(
   grid = ridge_grid
 )
 
-# save(ridge_res, file = "data/ridge_res.rda")
+# save(ridge_res, file = "r_scripts/ridge_res.rda")
 ```
 
 
@@ -381,7 +381,7 @@ rf_res <- tune_grid(
   grid = rf_grid
 )
 
-# save(rf_res, file = "data/rf_res.rda")
+# save(rf_res, file = "r_scripts/rf_res.rda")
 ```
 
 ### boosted trees
@@ -412,7 +412,7 @@ boost_res <- tune_grid(
   grid=boost_grid
 )
 
-# save(boost_res, file = "data/boost_res.rda")
+# save(boost_res, file = "r_scripts/boost_res.rda")
 ```
 
 ### support vector machine
@@ -447,7 +447,7 @@ svm_res <- tune_grid(
   grid = svm_grid
 )
 
-# save(svm_res, file = "data/svm_res.rda")
+# save(svm_res, file = "r_scripts/svm_res.rda")
 ```
 
 ### K-Nearest Neighbors
@@ -474,7 +474,7 @@ knn_res <- tune_grid(
   resamples = nba_folds, 
   grid = knn_grid)
 
-# save(knn_res, knn_workflow, file = "data/knn_res.rda")
+# save(knn_res, knn_workflow, file = "r_scripts/knn_res.rda")
 ```
 
 Finally, with all the models fit and looking prim and proper, we move on to analyzing our results and how well each model performed.
@@ -484,11 +484,11 @@ Finally, with all the models fit and looking prim and proper, we move on to anal
 To not have to run all the models every time, we decided to save them and load them all here to use in evaluating model performance.
 
 ```{r}
-load("data/ridge_res.rda")
-load("data/rf_res.rda")
-load("data/boost_res.rda")
-load("data/svm_res.rda")
-load("data/knn_res.rda")
+load("r_scripts/ridge_res.rda")
+load("r_scripts/rf_res.rda")
+load("r_scripts/boost_res.rda")
+load("r_scripts/svm_res.rda")
+load("r_scripts/knn_res.rda")
 ```
 
 For each model, we will approach it the same way. I will demonstrate it with our first model, the ridge regression.  
